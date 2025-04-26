@@ -152,9 +152,58 @@ def level2():
     player = Player('images/sprite1.png', 50, 50, 10)
     treasure = GameSprite('images/diamond blue.png', 1540, 320, 0)
 
+def level3():
+    global enemies, walls, player, treasure
+    walls = [Wall(0, 150), Wall(0, 0), Wall(560, 300), Wall(650, 300), Wall(1250, 250), WallH(50, 150), WallH(50, 0),
+             WallH(200, 0), WallH(350, 300), WallH(200, 450), WallH(300, 450), WallH(450, 450), WallH(500, 300),
+             WallH(600, 600), WallH(700, 600), WallH(850, 400), WallH(800, 600), WallH(950, 600), WallH(950, 400),
+             WallH(1100, 600), WallH(1250, 600), WallV(1400, 500), WallV(1400, 400), WallV(1400, 500), WallH(1450, 400),
+             WallH(1450, 250), WallH(1300, 250), WallV(1250, 300), WallH(1100, 400), WallH(700, 400), WallV(200, 150),
+             WallV(350, 0), WallV(350, 150), WallV(200, 300), WallV(700, 300), WallV(550, 500)]
+    enemies = [EnemyV('images/sprite2.png', 0, 50, 7, 700), EnemyH('images/sprite3.png', 0, 300, 7, 1400),
+               EnemyV('images/sprite4.png', 50, 500, 7, 600), EnemyH('images/sprite5.png', 300, 400, 7, 1100),
+               EnemyV('images/sprite6.png', 1540, 0, 10, 600)]
+
+    player = Player('images/sprite1.png', 50, 50, 10)
+    treasure = GameSprite('images/diamond blue.png', 1540, 320, 0)
+
+def level4():
+    global enemies, walls, player, treasure
+    walls = [Wall(0, 150), Wall(0, 0), Wall(560, 300), Wall(650, 300), Wall(1250, 250), WallH(50, 150), WallH(50, 0),
+             WallH(200, 0), WallH(350, 300), WallH(200, 450), WallH(300, 450), WallH(450, 450), WallH(500, 300),
+             WallH(600, 600), WallH(700, 600), WallH(850, 400), WallH(800, 600), WallH(950, 600), WallH(950, 400),
+             WallH(1100, 600), WallH(1250, 600), WallV(1400, 500), WallV(1400, 400), WallV(1400, 500), WallH(1450, 400),
+             WallH(1450, 250), WallH(1300, 250), WallV(1250, 300), WallH(1100, 400), WallH(700, 400), WallV(200, 150),
+             WallV(350, 0), WallV(350, 150), WallV(200, 300), WallV(700, 300), WallV(550, 500)]
+    enemies = [EnemyV('images/sprite2.png', 0, 50, 5, 700), EnemyH('images/sprite3.png', 0, 300, 5, 1400),
+               EnemyV('images/sprite4.png', 50, 500, 5, 600), EnemyH('images/sprite5.png', 300, 400, 5, 1100),
+               EnemyV('images/sprite6.png', 1540, 0, 15, 600), EnemyH('images/sprite7.png', 400,550, 7, 800)]
+    player = Player('images/sprite1.png', 50, 50, 10)
+    treasure = GameSprite('images/diamond blue.png', 1540, 320, 0)
+
+def level5():
+    global enemies, walls, player, treasure
+    walls = [Wall(0, 150), Wall(0, 0), Wall(560, 300), Wall(650, 300), Wall(1250, 250), WallH(50, 150), WallH(50, 0),
+             WallH(200, 0), WallH(350, 300), WallH(200, 450), WallH(300, 450), WallH(450, 450), WallH(500, 300),
+             WallH(600, 600), WallH(700, 600), WallH(850, 400), WallH(800, 600), WallH(950, 600), WallH(950, 400),
+             WallH(1100, 600), WallH(1250, 600), WallV(1400, 500), WallV(1400, 400), WallV(1400, 500), WallH(1450, 400),
+             WallH(1450, 250), WallH(1300, 250), WallV(1250, 300), WallH(1100, 400), WallH(700, 400), WallV(200, 150),
+             WallV(350, 0), WallV(350, 150), WallV(200, 300), WallV(700, 300), WallV(550, 500), Wall(1000, 450), Wall(1000, 550)]
+    enemies = [EnemyV('images/sprite2.png', 0, 50, 7, 700), EnemyH('images/sprite3.png', 0, 300, 7, 1400),
+               EnemyV('images/sprite4.png', 50, 500, 7, 600), EnemyH('images/sprite5.png', 300, 450, 7, 1100),
+               EnemyV('images/sprite6.png', 1540, 0, 15, 600), EnemyH('images/sprite7.png', 400,550, 7, 800)]
+    player = Player('images/sprite1.png', 50, 50, 10)
+    treasure = GameSprite('images/diamond blue.png', 1540, 320, 0)
+
+
+
 
 levels.append(level1)
 levels.append(level2)
+levels.append(level3)
+levels.append(level4)
+levels.append(level5)
+
 
 while game:
     for e in event.get():
